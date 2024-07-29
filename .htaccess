@@ -1,0 +1,30 @@
+
+# BEGIN WordPress
+# Dyrektywy zawarte między "BEGIN WordPress" oraz "END WordPress"
+# są generowane dynamicznie i powinny być modyfikowane tylko za pomocą
+# filtrów WordPressa. Zmiany dokonane bezpośrednio tutaj będą nadpisywane.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /example-website/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /example-website/index.php [L]
+</IfModule>
+php_value upload_max_filesize 128M
+php_value post_max_size 128M
+php_value memory_limit 256M
+php_value max_execution_time 300
+php_value max_input_time 300
+
+# END WordPress
+# BEGIN Simply Static
+# Dyrektywy zawarte między "BEGIN Simply Static" oraz "END Simply Static"
+# są generowane dynamicznie i powinny być modyfikowane tylko za pomocą
+# filtrów WordPressa. Zmiany dokonane bezpośrednio tutaj będą nadpisywane.
+<Files "C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\a2a3ca31b0bd52db6534dd1a01e29c6b-debug.txt">
+require all denied
+require host localhost
+</Files>
+# END Simply Static
