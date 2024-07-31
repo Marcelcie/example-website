@@ -1,6 +1,0 @@
-Jul 29 2024 19:59:00
-{"type":8192,"message":"Creation of dynamic property EDD_SL_Plugin_Updater_Oxygen::$version is deprecated","file":"C:\\xampp\\htdocs\\example-website\\wp-content\\plugins\\oxygen\\component-framework\\admin\\updater\\EDD_SL_Plugin_Updater_Oxygen.php","line":34}
-
-Jul 29 2024 19:59:02
-{"type":8192,"message":"Creation of dynamic property EDD_SL_Plugin_Updater_Oxygen::$version is deprecated","file":"C:\\xampp\\htdocs\\example-website\\wp-content\\plugins\\oxygen\\component-framework\\admin\\updater\\EDD_SL_Plugin_Updater_Oxygen.php","line":34}
-
