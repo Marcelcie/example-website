@@ -1,284 +1,226 @@
-[2024-07-31 09:59:21] [class-ss-archive-creation-job.php:83] Starting a job; no job is presently running
-[2024-07-31 09:59:21] [class-ss-archive-creation-job.php:84] Here's our task list: setup, fetch_urls, generate_404, transfer_files_locally, wrapup
-[2024-07-31 09:59:21] [class-ss-archive-creation-job.php:102] Pushing first task to queue: setup
-[2024-07-31 09:59:21] [class-ss-archive-creation-job.php:136] Current task: setup
-[2024-07-31 09:59:21] [class-ss-archive-creation-job.php:153] Performing task: setup
-[2024-07-31 09:59:21] [class-ss-task.php:44] Status message: [setup] Setting up
-[2024-07-31 09:59:21] [class-ss-setup-task.php:33] Creating archive directory: C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961\
-[2024-07-31 09:59:21] [class-ss-setup-task.php:72] Adding origin URL to queue: http://localhost/example-website/
-[2024-07-31 09:59:21] [class-ss-setup-task.php:137] File C:\xampp\htdocs\example-website\wp-content\plugins\simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js exists; adding to queue as: C:/xampp/htdocs/example-website/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
-[2024-07-31 09:59:21] [class-yoast-integration.php:47] Adding sitemap URL to queue: http://localhost/example-website/sitemap.xml
-[2024-07-31 09:59:21] [class-yoast-integration.php:47] Adding sitemap URL to queue: http://localhost/example-website/sitemap_index.xml
-[2024-07-31 09:59:21] [class-ss-archive-creation-job.php:175] We've found our next task: fetch_urls
-[2024-07-31 09:59:21] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
-[2024-07-31 09:59:21] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
-[2024-07-31 09:59:21] [class-ss-fetch-urls-task.php:69] Total pages: 4; Pages remaining: 4
-[2024-07-31 09:59:21] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/
-[2024-07-31 09:59:21] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 4
-[2024-07-31 09:59:21] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:21] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0af9cb869-O0P2At.tmp
-[2024-07-31 09:59:21] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/?simply_static_page=23485
-[2024-07-31 09:59:21] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/?simply_static_page=23485
-[2024-07-31 09:59:22] [class-ss-url-fetcher.php:103] Filesize: 26231 bytes
-[2024-07-31 09:59:22] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
-[2024-07-31 09:59:22] [class-ss-url-fetcher.php:233] New filename for static page: /index.html
-[2024-07-31 09:59:22] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0af9cb869-O0P2At.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/index.html
-[2024-07-31 09:59:22] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:159] Adding 13 URLs to the queue
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:23] [class-ss-page.php:118] Checking Content Identical:a908e3cb21d22194e09c6914ed4f1a546e0e12dd===. Value: FALSE
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:72] URL: C:/xampp/htdocs/example-website/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
-[2024-07-31 09:59:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 4
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:83] Not fetching URL because it is not a local URL
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/sitemap.xml
-[2024-07-31 09:59:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 4
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afb77777-Y1CEvN.tmp
-[2024-07-31 09:59:23] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/sitemap.xml?simply_static_page=23487
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/sitemap.xml?simply_static_page=23487
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:103] Filesize: 411 bytes
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/xml
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:233] New filename for static page: /sitemap.xml
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afb77777-Y1CEvN.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/sitemap.xml
-[2024-07-31 09:59:23] [class-ss-yoast-sitemap-handler.php:85] Copied C:\xampp\htdocs\example-website\wp-content\plugins\wordpress-seo/css/main-sitemap.xsl to C:/xampp/htdocs/example-website/wp-content/uploads/simply-static/temp-files/simply-static-1-1722419961/main-sitemap.xsl
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:23] [class-ss-page.php:118] Checking Content Identical:7c0240a0df7dd74c2da9dbc5f00af7cab6854c2f===. Value: FALSE
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/sitemap_index.xml
-[2024-07-31 09:59:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 4
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afb7fe33-28W6zy.tmp
-[2024-07-31 09:59:23] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/sitemap_index.xml?simply_static_page=23488
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/sitemap_index.xml?simply_static_page=23488
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:103] Filesize: 411 bytes
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/xml
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:233] New filename for static page: /sitemap_index.xml
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afb7fe33-28W6zy.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/sitemap_index.xml
-[2024-07-31 09:59:23] [class-ss-yoast-sitemap-handler.php:64] Copied C:/xampp/htdocs/example-website/wp-content/uploads/simply-static/temp-files/simply-static-1-1722419961/sitemap_index.xml to C:/xampp/htdocs/example-website/wp-content/uploads/simply-static/temp-files/simply-static-1-1722419961/sitemap.xml
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:23] [class-ss-page.php:118] Checking Content Identical:7c0240a0df7dd74c2da9dbc5f00af7cab6854c2f===. Value: FALSE
-[2024-07-31 09:59:23] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 4 pages/files
-[2024-07-31 09:59:23] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
-[2024-07-31 09:59:23] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
-[2024-07-31 09:59:23] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:69] Total pages: 16; Pages remaining: 12
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/oferty-pracy/
-[2024-07-31 09:59:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 16
-[2024-07-31 09:59:23] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afb86709-Q8t8LI.tmp
-[2024-07-31 09:59:23] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/oferty-pracy/?simply_static_page=23489
-[2024-07-31 09:59:23] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/oferty-pracy/?simply_static_page=23489
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:103] Filesize: 25088 bytes
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:233] New filename for static page: /oferty-pracy/index.html
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afb86709-Q8t8LI.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/oferty-pracy/index.html
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:159] Adding 13 URLs to the queue
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:24] [class-ss-page.php:118] Checking Content Identical:544c1eff9080a98990df62fea987cc4349b3227e===. Value: FALSE
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-includes/js/jquery/jquery.min.js
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afc4b959-RqQKBL.tmp
-[2024-07-31 09:59:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-includes/js/jquery/jquery.min.js?simply_static_page=23490
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-includes/js/jquery/jquery.min.js?simply_static_page=23490
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:103] Filesize: 87553 bytes
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/js/jquery/jquery.min.js
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afc4b959-RqQKBL.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/wp-includes/js/jquery/jquery.min.js
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:24] [class-ss-page.php:118] Checking Content Identical:79cd3587d565afe290076a8d36c31c305a573d18===. Value: FALSE
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-includes/css/dist/block-library/style.min.css
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afc58912-CwSw2d.tmp
-[2024-07-31 09:59:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-includes/css/dist/block-library/style.min.css?simply_static_page=23491
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-includes/css/dist/block-library/style.min.css?simply_static_page=23491
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:103] Filesize: 113381 bytes
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/css/dist/block-library/style.min.css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afc58912-CwSw2d.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/wp-includes/css/dist/block-library/style.min.css
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:24] [class-ss-page.php:118] Checking Content Identical:b16a640874025d085c38119a1a02a3460f83f2de===. Value: FALSE
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/plugins/oxygen/component-framework/oxygen.css
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afc62645-4khzlz.tmp
-[2024-07-31 09:59:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/plugins/oxygen/component-framework/oxygen.css?simply_static_page=23492
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/plugins/oxygen/component-framework/oxygen.css?simply_static_page=23492
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:103] Filesize: 20156 bytes
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/plugins/oxygen/component-framework/oxygen.css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afc62645-4khzlz.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/wp-content/plugins/oxygen/component-framework/oxygen.css
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:24] [class-ss-page.php:118] Checking Content Identical:1e544d0c438dee14676fc1448b1879d0e48e7719===. Value: FALSE
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-json/
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/example-website/wp-json/
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-json/wp/v2/pages/13
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/example-website/wp-json/wp/v2/pages/13
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/xmlrpc.php
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/example-website/xmlrpc.php
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-json/oembed/1.0/embed
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/example-website/wp-json/oembed/1.0/embed
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/oxygen/css/31.css
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afc70d89-x3gJcd.tmp
-[2024-07-31 09:59:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/oxygen/css/31.css?simply_static_page=23497
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/oxygen/css/31.css?simply_static_page=23497
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:103] Filesize: 3960 bytes
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/oxygen/css/31.css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afc70d89-x3gJcd.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/wp-content/uploads/oxygen/css/31.css
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:24] [class-ss-page.php:118] Checking Content Identical:2bf9d79cbb7593569c8e99d7d9974ab6b0e97636===. Value: FALSE
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/oxygen/css/7.css
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afc75d78-RTmWXU.tmp
-[2024-07-31 09:59:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/oxygen/css/7.css?simply_static_page=23498
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/oxygen/css/7.css?simply_static_page=23498
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:103] Filesize: 1706 bytes
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/oxygen/css/7.css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afc75d78-RTmWXU.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/wp-content/uploads/oxygen/css/7.css
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:24] [class-ss-page.php:118] Checking Content Identical:63c60c029be8bb585dcc463dd9bc643c5e318fac===. Value: FALSE
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/oxygen/css/13.css
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afc7aced-x8SK3y.tmp
-[2024-07-31 09:59:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/oxygen/css/13.css?simply_static_page=23499
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/oxygen/css/13.css?simply_static_page=23499
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:103] Filesize: 4942 bytes
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/oxygen/css/13.css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afc7aced-x8SK3y.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/wp-content/uploads/oxygen/css/13.css
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:159] Adding 1 URLs to the queue
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:24] [class-ss-page.php:118] Checking Content Identical:f8410ae2feb09d3da8599adb2b3cadee48720dfe===. Value: FALSE
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/oxygen/css/universal.css
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 16
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afc85a66-uqVSHh.tmp
-[2024-07-31 09:59:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/oxygen/css/universal.css?simply_static_page=23500
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/oxygen/css/universal.css?simply_static_page=23500
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:103] Filesize: 15096 bytes
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/oxygen/css/universal.css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afc85a66-uqVSHh.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/wp-content/uploads/oxygen/css/universal.css
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:24] [class-ss-page.php:118] Checking Content Identical:225f4ab21e6e147793e34102a630d77c76921f3b===. Value: FALSE
-[2024-07-31 09:59:24] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 4 of 16 pages/files
-[2024-07-31 09:59:24] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
-[2024-07-31 09:59:24] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
-[2024-07-31 09:59:24] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:69] Total pages: 19; Pages remaining: 3
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-json/wp/v2/pages/34
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 19
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/example-website/wp-json/wp/v2/pages/34
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/oxygen/css/34.css
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 19
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afc9276d-EtX6ER.tmp
-[2024-07-31 09:59:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/oxygen/css/34.css?simply_static_page=23502
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/oxygen/css/34.css?simply_static_page=23502
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:103] Filesize: 760 bytes
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/oxygen/css/34.css
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afc9276d-EtX6ER.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/wp-content/uploads/oxygen/css/34.css
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:24] [class-ss-page.php:118] Checking Content Identical:1940609e4b381eb08ca07f901cf13507605a25c6===. Value: FALSE
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/2024/07/pexels-pixabay-459203.jpg
-[2024-07-31 09:59:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 19
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afc97330-4KkJ9R.tmp
-[2024-07-31 09:59:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/2024/07/pexels-pixabay-459203.jpg?simply_static_page=23503
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/2024/07/pexels-pixabay-459203.jpg?simply_static_page=23503
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:103] Filesize: 3700147 bytes
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/07/pexels-pixabay-459203.jpg
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afc97330-4KkJ9R.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961/wp-content/uploads/2024/07/pexels-pixabay-459203.jpg
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
-[2024-07-31 09:59:24] [class-ss-page.php:118] Checking Content Identical:62ce484e858530d1ac2069126fc30a11a20caa0e===. Value: FALSE
-[2024-07-31 09:59:24] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 16 of 19 pages/files
-[2024-07-31 09:59:24] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
-[2024-07-31 09:59:24] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
-[2024-07-31 09:59:24] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
-[2024-07-31 09:59:24] [class-ss-fetch-urls-task.php:69] Total pages: 19; Pages remaining: 0
-[2024-07-31 09:59:24] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 19 of 19 pages/files
-[2024-07-31 09:59:24] [class-ss-archive-creation-job.php:175] We've found our next task: generate_404
-[2024-07-31 09:59:24] [class-ss-archive-creation-job.php:136] Current task: generate_404
-[2024-07-31 09:59:24] [class-ss-archive-creation-job.php:153] Performing task: generate_404
-[2024-07-31 09:59:24] [class-ss-task.php:44] Status message: [generate_404] Generating 404 Page.
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66aa0afcacce1-GgpOgY.tmp
-[2024-07-31 09:59:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/1722419965?simply_static_page=0
-[2024-07-31 09:59:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/1722419965?simply_static_page=0
-[2024-07-31 09:59:25] [class-ss-url-fetcher.php:103] Filesize: 21863 bytes
-[2024-07-31 09:59:25] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
-[2024-07-31 09:59:25] [class-ss-url-fetcher.php:233] New filename for static page: 404/index.html
-[2024-07-31 09:59:25] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66aa0afcacce1-GgpOgY.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1722419961\404/index.html
-[2024-07-31 09:59:25] [class-ss-generate-404-task.php:119] Replacing URLs in the static file
-[2024-07-31 09:59:25] [class-ss-generate-404-task.php:125] We're saving this URL; keeping the static file
-[2024-07-31 09:59:25] [class-ss-page.php:118] Checking Content Identical:01837e05037a66f1276d62cb8d8189e1b3d1cc44===. Value: FALSE
-[2024-07-31 09:59:25] [class-ss-task.php:44] Status message: [generate_404] 404 Page generated
-[2024-07-31 09:59:25] [class-ss-archive-creation-job.php:175] We've found our next task: transfer_files_locally
-[2024-07-31 09:59:25] [class-ss-archive-creation-job.php:136] Current task: transfer_files_locally
-[2024-07-31 09:59:25] [class-ss-archive-creation-job.php:153] Performing task: transfer_files_locally
-[2024-07-31 09:59:25] [class-ss-task.php:44] Status message: [transfer_files_locally] Transferring 13 of 13 files
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/oferty-pracy
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-includes/js/jquery
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-includes/css/dist/block-library
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/plugins/oxygen/component-framework
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/oxygen/css
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/oxygen/css
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/oxygen/css
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/oxygen/css
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/oxygen/css
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/2024/07
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:73] [Transfer] Total Pages:13. Processed Pages: 13
-[2024-07-31 09:59:25] [class-ss-task.php:44] Status message: [transfer_files_locally] Transferred 13 of 13 files
-[2024-07-31 09:59:25] [trait-can-process-pages.php:103] Total pages: 13; Pages remaining: 0
-[2024-07-31 09:59:25] [class-ss-transfer-files-locally-task.php:238] Transferring 404 Page
-[2024-07-31 09:59:25] [class-ss-task.php:44] Status message: [destination_url] Destination URL: <a href="https://marcelcie.github.io/example-website/" target="_blank">https://marcelcie.github.io/example-website/</a>
-[2024-07-31 09:59:25] [class-ss-archive-creation-job.php:175] We've found our next task: wrapup
-[2024-07-31 09:59:25] [class-ss-archive-creation-job.php:136] Current task: wrapup
-[2024-07-31 09:59:25] [class-ss-archive-creation-job.php:153] Performing task: wrapup
-[2024-07-31 09:59:25] [class-ss-wrapup-task.php:22] Deleting temporary files
-[2024-07-31 09:59:25] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
-[2024-07-31 09:59:25] [class-ss-archive-creation-job.php:170] This task is done and there are no more tasks, time to complete the job
-[2024-07-31 09:59:25] [class-ss-archive-creation-job.php:197] Completing the job
-[2024-07-31 09:59:25] [class-ss-archive-creation-job.php:324] Status message: [done] Done! Finished in 00:00:04
+[2024-09-27 08:46:43] [class-ss-archive-creation-job.php:83] Starting a job; no job is presently running
+[2024-09-27 08:46:43] [class-ss-archive-creation-job.php:84] Here's our task list: setup, fetch_urls, generate_404, transfer_files_locally, wrapup
+[2024-09-27 08:46:43] [class-ss-archive-creation-job.php:102] Pushing first task to queue: setup
+[2024-09-27 08:46:43] [class-ss-archive-creation-job.php:136] Current task: setup
+[2024-09-27 08:46:43] [class-ss-archive-creation-job.php:153] Performing task: setup
+[2024-09-27 08:46:43] [class-ss-task.php:44] Status message: [setup] Setting up
+[2024-09-27 08:46:43] [class-ss-setup-task.php:33] Creating archive directory: C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803\
+[2024-09-27 08:46:43] [class-ss-setup-task.php:72] Adding origin URL to queue: http://localhost/example-website/
+[2024-09-27 08:46:43] [class-ss-archive-creation-job.php:175] We've found our next task: fetch_urls
+[2024-09-27 08:46:43] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-09-27 08:46:43] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-09-27 08:46:43] [class-ss-fetch-urls-task.php:69] Total pages: 1; Pages remaining: 1
+[2024-09-27 08:46:43] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/
+[2024-09-27 08:46:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 1
+[2024-09-27 08:46:43] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-27 08:46:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f3b7cb5-QJalMQ.tmp
+[2024-09-27 08:46:43] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/?simply_static_page=23504
+[2024-09-27 08:46:43] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/?simply_static_page=23504
+[2024-09-27 08:46:44] [class-ss-url-fetcher.php:103] Filesize: 24011 bytes
+[2024-09-27 08:46:44] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-09-27 08:46:44] [class-ss-url-fetcher.php:233] New filename for static page: /index.html
+[2024-09-27 08:46:44] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f3b7cb5-QJalMQ.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803/index.html
+[2024-09-27 08:46:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-09-27 08:46:44] [class-ss-fetch-urls-task.php:159] Adding 13 URLs to the queue
+[2024-09-27 08:46:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-09-27 08:46:44] [class-ss-page.php:119] Checking Content Identical:829c05baabcd270a27aa7cbdc07e0d9f4f4119af===. Value: FALSE
+[2024-09-27 08:46:44] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 1 pages/files
+[2024-09-27 08:46:44] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
+[2024-09-27 08:46:44] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-09-27 08:46:44] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-09-27 08:46:44] [class-ss-fetch-urls-task.php:69] Total pages: 13; Pages remaining: 12
+[2024-09-27 08:46:44] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/oferty-pracy/
+[2024-09-27 08:46:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 13
+[2024-09-27 08:46:44] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-27 08:46:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f4c4d42-PtDxVZ.tmp
+[2024-09-27 08:46:44] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/oferty-pracy/?simply_static_page=23505
+[2024-09-27 08:46:44] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/oferty-pracy/?simply_static_page=23505
+[2024-09-27 08:46:44] [class-ss-url-fetcher.php:103] Filesize: 25478 bytes
+[2024-09-27 08:46:44] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2024-09-27 08:46:44] [class-ss-url-fetcher.php:233] New filename for static page: /oferty-pracy/index.html
+[2024-09-27 08:46:44] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f4c4d42-PtDxVZ.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803/oferty-pracy/index.html
+[2024-09-27 08:46:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-09-27 08:46:45] [class-ss-page.php:119] Checking Content Identical:544c1eff9080a98990df62fea987cc4349b3227e===. Value: FALSE
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-includes/js/jquery/jquery.min.js
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f514ade-EZD7z7.tmp
+[2024-09-27 08:46:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-includes/js/jquery/jquery.min.js?simply_static_page=23506
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-includes/js/jquery/jquery.min.js?simply_static_page=23506
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:103] Filesize: 87553 bytes
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/js/jquery/jquery.min.js
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f514ade-EZD7z7.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803/wp-includes/js/jquery/jquery.min.js
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-09-27 08:46:45] [class-ss-page.php:119] Checking Content Identical:79cd3587d565afe290076a8d36c31c305a573d18===. Value: FALSE
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-includes/css/dist/block-library/style.min.css
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f52a438-3EMF7b.tmp
+[2024-09-27 08:46:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-includes/css/dist/block-library/style.min.css?simply_static_page=23507
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-includes/css/dist/block-library/style.min.css?simply_static_page=23507
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:103] Filesize: 113381 bytes
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/css/dist/block-library/style.min.css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f52a438-3EMF7b.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803/wp-includes/css/dist/block-library/style.min.css
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-09-27 08:46:45] [class-ss-page.php:119] Checking Content Identical:b16a640874025d085c38119a1a02a3460f83f2de===. Value: FALSE
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/plugins/oxygen/component-framework/oxygen.css
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f53a5df-L7o60L.tmp
+[2024-09-27 08:46:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/plugins/oxygen/component-framework/oxygen.css?simply_static_page=23508
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/plugins/oxygen/component-framework/oxygen.css?simply_static_page=23508
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:103] Filesize: 20156 bytes
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/plugins/oxygen/component-framework/oxygen.css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f53a5df-L7o60L.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803/wp-content/plugins/oxygen/component-framework/oxygen.css
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-09-27 08:46:45] [class-ss-page.php:119] Checking Content Identical:1e544d0c438dee14676fc1448b1879d0e48e7719===. Value: FALSE
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-json/
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/example-website/wp-json/
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-json/wp/v2/pages/13
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/example-website/wp-json/wp/v2/pages/13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/xmlrpc.php
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/example-website/xmlrpc.php
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-json/oembed/1.0/embed
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/example-website/wp-json/oembed/1.0/embed
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/oxygen/css/31.css
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f54f9d2-23lkzV.tmp
+[2024-09-27 08:46:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/oxygen/css/31.css?simply_static_page=23513
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/oxygen/css/31.css?simply_static_page=23513
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:103] Filesize: 3943 bytes
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/oxygen/css/31.css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f54f9d2-23lkzV.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803/wp-content/uploads/oxygen/css/31.css
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-09-27 08:46:45] [class-ss-page.php:119] Checking Content Identical:a7bac2bb12613aa829431f46ad78cce61274d146===. Value: FALSE
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/oxygen/css/7.css
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f5568fe-BIn0rD.tmp
+[2024-09-27 08:46:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/oxygen/css/7.css?simply_static_page=23514
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/oxygen/css/7.css?simply_static_page=23514
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:103] Filesize: 1672 bytes
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/oxygen/css/7.css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f5568fe-BIn0rD.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803/wp-content/uploads/oxygen/css/7.css
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-09-27 08:46:45] [class-ss-page.php:119] Checking Content Identical:ed6942276efc63de088ea34624b9af70c48b1825===. Value: FALSE
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/oxygen/css/13.css
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f55c24c-4SO1VH.tmp
+[2024-09-27 08:46:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/oxygen/css/13.css?simply_static_page=23515
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/oxygen/css/13.css?simply_static_page=23515
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:103] Filesize: 5932 bytes
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/oxygen/css/13.css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f55c24c-4SO1VH.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803/wp-content/uploads/oxygen/css/13.css
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:159] Adding 1 URLs to the queue
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-09-27 08:46:45] [class-ss-page.php:119] Checking Content Identical:ba32ecbb02e9d62329363a723099b62eea2248b4===. Value: FALSE
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/oxygen/css/universal.css
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 13
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f5639db-ft5gb6.tmp
+[2024-09-27 08:46:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/oxygen/css/universal.css?simply_static_page=23516
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/oxygen/css/universal.css?simply_static_page=23516
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:103] Filesize: 15096 bytes
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/oxygen/css/universal.css
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f5639db-ft5gb6.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803/wp-content/uploads/oxygen/css/universal.css
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-09-27 08:46:45] [class-ss-page.php:119] Checking Content Identical:225f4ab21e6e147793e34102a630d77c76921f3b===. Value: FALSE
+[2024-09-27 08:46:45] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 1 of 13 pages/files
+[2024-09-27 08:46:45] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
+[2024-09-27 08:46:45] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-09-27 08:46:45] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:69] Total pages: 14; Pages remaining: 1
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/example-website/wp-content/uploads/2024/07/pexels-pixabay-459203.jpg
+[2024-09-27 08:46:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 14
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f570775-PnNWUb.tmp
+[2024-09-27 08:46:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/wp-content/uploads/2024/07/pexels-pixabay-459203.jpg?simply_static_page=23517
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/wp-content/uploads/2024/07/pexels-pixabay-459203.jpg?simply_static_page=23517
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:103] Filesize: 3700147 bytes
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/07/pexels-pixabay-459203.jpg
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f570775-PnNWUb.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803/wp-content/uploads/2024/07/pexels-pixabay-459203.jpg
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-09-27 08:46:45] [class-ss-page.php:119] Checking Content Identical:62ce484e858530d1ac2069126fc30a11a20caa0e===. Value: FALSE
+[2024-09-27 08:46:45] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 13 of 14 pages/files
+[2024-09-27 08:46:45] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
+[2024-09-27 08:46:45] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-09-27 08:46:45] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-09-27 08:46:45] [class-ss-fetch-urls-task.php:69] Total pages: 14; Pages remaining: 0
+[2024-09-27 08:46:45] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 14 of 14 pages/files
+[2024-09-27 08:46:45] [class-ss-archive-creation-job.php:175] We've found our next task: generate_404
+[2024-09-27 08:46:45] [class-ss-archive-creation-job.php:136] Current task: generate_404
+[2024-09-27 08:46:45] [class-ss-archive-creation-job.php:153] Performing task: generate_404
+[2024-09-27 08:46:45] [class-ss-task.php:44] Status message: [generate_404] Generating 404 Page.
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ciesl\AppData\Local\Temp/66f670f585f5b-5wZtsL.tmp
+[2024-09-27 08:46:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/example-website/1727426806?simply_static_page=0
+[2024-09-27 08:46:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/example-website/1727426806?simply_static_page=0
+[2024-09-27 08:46:46] [class-ss-url-fetcher.php:103] Filesize: 19613 bytes
+[2024-09-27 08:46:46] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-09-27 08:46:46] [class-ss-url-fetcher.php:233] New filename for static page: 404/index.html
+[2024-09-27 08:46:46] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ciesl\AppData\Local\Temp/66f670f585f5b-5wZtsL.tmp to C:\xampp\htdocs\example-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1727426803\404/index.html
+[2024-09-27 08:46:46] [class-ss-generate-404-task.php:119] Replacing URLs in the static file
+[2024-09-27 08:46:46] [class-ss-generate-404-task.php:125] We're saving this URL; keeping the static file
+[2024-09-27 08:46:46] [class-ss-page.php:119] Checking Content Identical:b7910e8c27d1dd6a70e73787d7d16e0700831f19===. Value: FALSE
+[2024-09-27 08:46:46] [class-ss-task.php:44] Status message: [generate_404] 404 Page generated
+[2024-09-27 08:46:46] [class-ss-archive-creation-job.php:175] We've found our next task: transfer_files_locally
+[2024-09-27 08:46:46] [class-ss-archive-creation-job.php:136] Current task: transfer_files_locally
+[2024-09-27 08:46:46] [class-ss-archive-creation-job.php:153] Performing task: transfer_files_locally
+[2024-09-27 08:46:46] [class-ss-task.php:44] Status message: [transfer_files_locally] Transferring 10 of 10 files
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/oferty-pracy
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-includes/js/jquery
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-includes/css/dist/block-library
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/plugins/oxygen/component-framework
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/oxygen/css
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/oxygen/css
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/oxygen/css
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/oxygen/css
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/example-website/wp-content/uploads/2024/07
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:73] [Transfer] Total Pages:10. Processed Pages: 10
+[2024-09-27 08:46:46] [class-ss-task.php:44] Status message: [transfer_files_locally] Transferred 10 of 10 files
+[2024-09-27 08:46:46] [trait-can-process-pages.php:110] Total pages: 10; Pages remaining: 0
+[2024-09-27 08:46:46] [class-ss-transfer-files-locally-task.php:238] Transferring 404 Page
+[2024-09-27 08:46:46] [class-ss-task.php:44] Status message: [destination_url] Destination URL: <a href="https://marcelcie.github.io/example-website/" target="_blank">https://marcelcie.github.io/example-website/</a>
+[2024-09-27 08:46:46] [class-ss-archive-creation-job.php:175] We've found our next task: wrapup
+[2024-09-27 08:46:46] [class-ss-archive-creation-job.php:136] Current task: wrapup
+[2024-09-27 08:46:46] [class-ss-archive-creation-job.php:153] Performing task: wrapup
+[2024-09-27 08:46:46] [class-ss-wrapup-task.php:22] Deleting temporary files
+[2024-09-27 08:46:46] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
+[2024-09-27 08:46:46] [class-ss-archive-creation-job.php:170] This task is done and there are no more tasks, time to complete the job
+[2024-09-27 08:46:46] [class-ss-archive-creation-job.php:197] Completing the job
+[2024-09-27 08:46:46] [class-ss-archive-creation-job.php:324] Status message: [done] Done! Finished in 00:00:03
